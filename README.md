@@ -1,8 +1,8 @@
 # Worknoon WordPress Assessment
 
-**Submitted by:** [Your Name]
+**Submitted by:** Monday Ofem
 **Role:** WordPress Developer (SEO + Systems Specialist)
-**Submission Date:** [Date]
+**Submission Date:** 3/05/2026
 
 ## Section A: Setup Instructions
 
@@ -27,7 +27,7 @@ Install the following from **Plugins → Add New** in the WordPress admin:
 | Plugin             | Purpose                       |
 | ------------------ | ----------------------------- |
 | Elementor          | Page builder for landing page |
-| WPForms Lite       | Contact form                  |
+| Fluent Forms       | Contact form                  |
 | Yoast SEO          | Schema markup + sitemap       |
 | LiteSpeed Cache    | Page speed optimization       |
 | Smush              | Image compression             |
@@ -87,7 +87,7 @@ add_action( 'wp_head', 'worknoon_add_schema' );
 | --------------------- | ---------------------------------------- |
 | WordPress 6.4         | Core CMS                                 |
 | Elementor Free        | Visual page builder                      |
-| WPForms Lite          | Contact form management                  |
+| Fluent Forms          | Contact form management                  |
 | Yoast SEO             | On-page SEO, schema, sitemap             |
 | LiteSpeed Cache       | Server-side caching                      |
 | Smush                 | Lossless image compression               |
@@ -180,4 +180,4 @@ While Rank Math offers more schema types in its free version, Yoast's Organizati
 
 ## Demo Video
 
-[Link to Loom / YouTube / Google Drive video]
+https://www.loom.com/share/f43d575c88354a139d1142beb64e104b
