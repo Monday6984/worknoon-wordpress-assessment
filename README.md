@@ -1,8 +1,8 @@
 # Worknoon WordPress Assessment
 
-**Submitted by:** Monday Ofem
+**Submitted by:** [Your Name]
 **Role:** WordPress Developer (SEO + Systems Specialist)
-**Submission Date:** 3/05/2026
+**Submission Date:** [Date]
 
 ---
 
@@ -22,8 +22,6 @@ worknoon-wordpress-assessment/
 │   └── screenshot.png
 └── README.md                      # This file
 ```
-
----
 
 ## Section A: Setup Instructions
 
@@ -58,7 +56,7 @@ Install the following from **Plugins → Add New** in the WordPress admin:
 ### Theme Setup
 
 1. Install and activate the **Hello Elementor** theme.
-2. Upload the `/theme/` folder contents as a child theme via
+2. Upload the `/theme/worknoon-child` folder contents as a child theme via
    **Appearance → Themes → Add New → Upload Theme**.
 3. Activate the child theme.
 
@@ -69,9 +67,9 @@ Install the following from **Plugins → Add New** in the WordPress admin:
 2. Open the page in Elementor and build using the provided template or from scratch.
 3. Sections to include:
    - Hero section with headline and CTA button
-   - Services section (3-column grid)
+   - Services section (4-column grid)
    - Testimonials section
-   - Contact Form (insert WPForms shortcode)
+   - Contact Form (insert FluentForms shortcode)
 
 ### Schema Markup Integration
 
@@ -102,8 +100,6 @@ add_action( 'wp_head', 'worknoon_add_schema' );
 3. Verify the tracking tag is firing via browser DevTools → Network tab
    (filter for `gtag`).
 
----
-
 ## Tools & Technologies Used
 
 | Tool / Technology     | Purpose                                  |
@@ -120,8 +116,6 @@ add_action( 'wp_head', 'worknoon_add_schema' );
 | JSON-LD               | Structured data / schema format          |
 | Google Search Console | Indexing monitoring + sitemap submission |
 | Screaming Frog        | Technical SEO auditing                   |
-
----
 
 ## System Architecture Overview
 
@@ -159,4 +153,53 @@ External Services:
 - **JSON-LD schema** is injected via `wp_head` to keep it separate from page
   content, making it easier to maintain and update.
 
----
+## Section F: Project Reflection
+
+### Problem Overview
+
+The goal was to build a functional, optimised WordPress landing page that demonstrates both development skill and SEO/entity strategy. Beyond just building a page, the challenge was to think holistically — ensuring the site is crawlable, indexable, schema-compliant, and architected for scale.
+
+### Approach
+
+I structured the project in two parallel tracks:
+
+1. **Technical track:** WordPress setup → theme → Elementor page build → plugin stack → analytics integration.
+2. **SEO/Entity track:** JSON-LD schema creation → Knowledge Panel strategy → indexing diagnosis → short answer documentation.
+
+This parallel approach ensured that SEO considerations were baked in from the start rather than retrofitted.
+
+### Key Decisions & Why
+
+**Elementor over Gutenberg:**
+Elementor was chosen for speed of visual development and the ability to produce a polished, responsive layout without writing custom CSS for every breakpoint.
+For a client-facing deliverable built under time pressure, Elementor's drag-and-drop system is more pragmatic.
+
+**JSON-LD over Microdata:**
+JSON-LD is Google's recommended format for structured data. It keeps schema separate from HTML, making it easier to validate, update, and maintain. Microdata requires embedding attributes directly into HTML, which becomes messy with page builders like Elementor.
+
+**LiteSpeed Cache + Autoptimize over WP Rocket:**
+WP Rocket is premium (~$59/year). The free stack of LiteSpeed Cache + Autoptimize achieves comparable results for caching and asset minification, making it a better recommendation for clients with cost constraints.
+
+**Yoast SEO for schema:**
+While Rank Math offers more schema types in its free version, Yoast's Organization and Person schema implementation is more stable and widely tested, particularly for Knowledge Graph entity building.
+
+### Tradeoffs Considered
+
+| Decision               | Tradeoff                                                                    |
+| ---------------------- | --------------------------------------------------------------------------- |
+| Elementor Free         | No Theme Builder; limited design tokens vs Pro                              |
+| LiteSpeed Cache (free) | Requires LiteSpeed server; less effective on Apache                         |
+| Yoast SEO              | Less schema variety vs Rank Math free; heavier JS footprint                 |
+| Static WordPress       | Simpler to deploy vs headless (Next.js), but less flexible for SPA-style UX |
+
+### Challenges & Resolutions
+
+**Challenge:** Ensuring schema `sameAs` links are consistent across all files without a live Wikidata or social profile to reference.
+**Resolution:** Used placeholder URLs in a realistic format and documented the update process clearly so the client can swap them in without technical knowledge.
+
+**Challenge:** Demonstrating indexing troubleshooting without a broken live site.
+**Resolution:** Documented the diagnostic process as a systematic, step-by-step runbook that covers all real-world failure scenarios — applicable regardless of the specific site.
+
+## Demo Video
+
+[Link to Loom / YouTube / Google Drive video]
