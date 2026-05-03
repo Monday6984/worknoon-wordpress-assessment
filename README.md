@@ -4,25 +4,6 @@
 **Role:** WordPress Developer (SEO + Systems Specialist)
 **Submission Date:** [Date]
 
----
-
-## Repository Structure
-
-```
-worknoon-wordpress-assessment/
-├── organization-schema.json       # Section B: Organization Schema
-├── person-schema.json             # Section B: Founder Person Schema
-├── website-schema.json            # Section B: Website + Logo + sameAs Schema
-├── knowledge-panel-strategy.md   # Section C: Knowledge Panel Strategy
-├── seo-diagnosis.md               # Section D: SEO Indexing Troubleshooting
-├── short-answers.md               # Section E: Short Answer Questions
-├── theme/                         # Section A: Custom child theme files
-│   ├── style.css
-│   ├── functions.php
-│   └── screenshot.png
-└── README.md                      # This file
-```
-
 ## Section A: Setup Instructions
 
 ### Prerequisites
@@ -146,12 +127,9 @@ External Services:
 
 **Key design decisions:**
 
-- **Cloudflare + LiteSpeed Cache** provides two caching layers — edge and server —
-  maximising response speed globally.
-- **Yoast SEO** was chosen over Rank Math for its maturity and reliability in
-  schema output, especially for Organization and Person entities.
-- **JSON-LD schema** is injected via `wp_head` to keep it separate from page
-  content, making it easier to maintain and update.
+- **Cloudflare + LiteSpeed Cache** provides two caching layers — edge and server — maximising response speed globally.
+- **Yoast SEO** was chosen over Rank Math for its maturity and reliability in schema output, especially for Organization and Person entities.
+- **JSON-LD schema** is injected via `wp_head` to keep it separate from page content, making it easier to maintain and update.
 
 ## Section F: Project Reflection
 
