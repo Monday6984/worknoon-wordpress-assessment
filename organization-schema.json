@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Worknoon",
+  "url": "https://worknoon.com/",
+  "logo": "https://worknoon.com/favicon-192x192.png",
+  "description": "Discover and book coworking spaces, private offices, meeting rooms, and hybrid workspaces.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Atlanta",
+    "addressRegion": "Georgia",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/worknoonhq",
+    "https://www.instagram.com/worknoon/",
+    "https://x.com/worknoon"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "email": "hello@worknoon.com"
+  }
+}
