@@ -10,11 +10,10 @@
     "name": "Worknoon"
   },
   "url": "https://worknoon.com/about",
-  "image": "https://worknoon.com/founder.jpg",
+  "image": "https://worknoon.com/wp-content/uploads/founder.jpg",
   "description": "Founder and CEO of Worknoon, that connects teams and individuals to flexible workspaces worldwide – fixing the broken process of finding the right place to work, meet, and grow.",
   "sameAs": [
     "https://ng.linkedin.com/in/john-ntia",
-    "https://twitter.com/johnntia",
-    "https://www.crunchbase.com/person/john-ntia"
+    "https://twitter.com/johnntia"
   ]
 }

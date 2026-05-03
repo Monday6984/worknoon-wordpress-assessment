@@ -39,9 +39,12 @@
         "@id": "https://worknoon.com/#logo"
       },
       "sameAs": [
-        "https://www.linkedin.com/company/worknoonhq",
-        "https://www.instagram.com/worknoon/",
-        "https://x.com/worknoon"
+        "https://www.linkedin.com/company/worknoon",
+        "https://twitter.com/worknoon",
+        "https://www.facebook.com/worknoon",
+        "https://www.instagram.com/worknoon",
+        "https://www.youtube.com/@worknoon",
+        "https://github.com/worknoon"
       ]
     }
   ]
